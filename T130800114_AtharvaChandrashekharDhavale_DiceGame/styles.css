@@ -1,0 +1,119 @@
+.container {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+
+#players {
+  display: flex;
+  justify-content: center; /* center all dice horizontally */
+  align-items: center;
+  gap: 40px; /* spacing between players */
+}
+
+.dice {
+  text-align: center;
+}
+
+
+body {
+  /* Gradient background */
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  margin: 0;
+  padding: 0;
+}
+
+/* Title styling */
+h1 {
+  margin: 30px;
+  font-family: "Poppins", sans-serif; /* modern clean font */
+  font-weight: 700;
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4);
+  font-size: 5rem;
+  color: #ffdd59; /* bright yellow for contrast */
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+
+p {
+  font-size: 2rem;
+  color: #4ecca3;
+  font-family: "Indie Flower", cursive;
+}
+
+img {
+  width: 80%;
+}
+
+footer {
+  margin-top: 5%;
+  color: #eeeeee;
+  text-align: center;
+  font-family: "Indie Flower", cursive;
+}
+
+#btn {
+  border: 2px solid black;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: white;
+  border-radius: 15px;
+  color: black;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+#btn:hover {
+  background-color: #4ecca3;
+  color: white;
+  border-color: #232931;
+}
+
+/* Dropdown styling */
+#playerCount {
+  border: 2px solid black;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: white;
+  border-radius: 15px;
+  color: black;
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+#playerCount:hover {
+  background-color: #4ecca3;
+  color: white;
+  border-color: #232931;
+}
+
+/* Center dropdown section */
+.player-select {
+  text-align: center;
+  margin-top: 20px;
+  font-family: "Indie Flower", cursive;
+  font-size: 1.5rem;
+  color: #eeeeee;
+}
+/* Glow effect for winner */
+.winner-glow {
+  box-shadow: 0 0 25px 5px #4ecca3;
+  border-radius: 20px;
+  transition: box-shadow 0.3s ease-in-out;
+}
+/* Dice roll animation */
+@keyframes shake {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(10deg); }
+  50% { transform: rotate(-10deg); }
+  75% { transform: rotate(10deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.roll-animation {
+  animation: shake 0.5s ease;
+}
