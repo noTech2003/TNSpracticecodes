@@ -1,1 +1,1 @@
-# TNSpracticecodes
+# TNSDailyPracticeCodes
